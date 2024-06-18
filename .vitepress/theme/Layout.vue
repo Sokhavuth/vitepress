@@ -6,7 +6,6 @@ const { site, frontmatter } = useData()
 </script>
 
 <template>
-  <link href="/fonts/setup.css" rel="stylesheet" />
   <div v-if="frontmatter.home">
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>

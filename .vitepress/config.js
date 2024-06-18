@@ -4,5 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
-  base: '/vitepress/'
+  base: '/vitepress/',
+  head: [
+    ['link', { rel: 'icon', href: '/vitepress/images/siteLogo.png' }],
+    ['link', { rel: 'stylesheet', href: '/vitepress//fonts/setup.css' }]
+  ]
 }) 
