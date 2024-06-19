@@ -37,7 +37,7 @@ if(props.pageURL === '/'){
         <div class="region">
             <div class="topnav" id="myTopnav">
                 <a href="/" :class="`home ${home}`">ទំព័រ​ដើម</a>
-                <a href="/Khmer/1" :class="`Khmer ${Khmer}`">រឿង​ខ្មែរ</a>
+                <a href="/vitepress/Khmer/1" :class="`Khmer ${Khmer}`">រឿង​ខ្មែរ</a>
                 <a href="/Thai/1" :class="`Thai ${Thai}`">រឿង​ថៃ</a>
                 <a href="/Chinese/1" :class="`Chinese ${Chinese}`">រឿង​ចិន</a>
                 <a href="/Korean/1" :class="`Korean ${Korean}`">រឿង​កូរ៉េ</a>
