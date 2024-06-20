@@ -1,0 +1,5 @@
+---
+post: true
+---
+
+Post page

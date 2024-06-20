@@ -28,6 +28,15 @@ if(props.pageURL === '/'){
 }else if(props.pageURL === 'about'){
     about = 'active'
 }
+
+function myFunction() {
+    var x = document.getElementById("myTopnav")
+    if (x.className === "topnav") {
+        x.className += " responsive"
+    } else {
+        x.className = "topnav"
+    }
+}
 </script>
 
 <template>
@@ -36,21 +45,20 @@ if(props.pageURL === '/'){
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <div class="region">
             <div class="topnav" id="myTopnav">
-                <a href="/" :class="`home ${home}`">ទំព័រ​ដើម</a>
+                <a href="/vitepress" :class="`home ${home}`">ទំព័រ​ដើម</a>
                 <a href="/vitepress/Khmer/1" :class="`Khmer ${Khmer}`">រឿង​ខ្មែរ</a>
-                <a href="/Thai/1" :class="`Thai ${Thai}`">រឿង​ថៃ</a>
-                <a href="/Chinese/1" :class="`Chinese ${Chinese}`">រឿង​ចិន</a>
-                <a href="/Korean/1" :class="`Korean ${Korean}`">រឿង​កូរ៉េ</a>
-                <a href="/Travel/1" :class="`Travel ${Travel}`">​ដើរលេង</a>
-                <a href="/page/contact" :class="`contact ${contact}`">ទំនាក់ទំនង</a>
-                <a href="/page/about" :class="`about ${about}`">អំពីយើង​ខ្ញុំ</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="/vitepress/Thai/1" :class="`Thai ${Thai}`">រឿង​ថៃ</a>
+                <a href="/vitepress/Chinese/1" :class="`Chinese ${Chinese}`">រឿង​ចិន</a>
+                <a href="/vitepress/Korean/1" :class="`Korean ${Korean}`">រឿង​កូរ៉េ</a>
+                <a href="/vitepress/Travel/1" :class="`Travel ${Travel}`">​ដើរលេង</a>
+                <a href="/vitepress/page/contact" :class="`contact ${contact}`">ទំនាក់ទំនង</a>
+                <a href="/vitepress/page/about" :class="`about ${about}`">អំពីយើង​ខ្ញុំ</a>
+                <a href="javascript:void(0);" class="icon" @click="myFunction">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
-    </nav>
-        
+    </nav>    
 </section>
 </template>
 

@@ -29,7 +29,7 @@
 </section>
 </template>
 
-<style>
+<style scoped>
     .header{
         background: var(--background-dark);
     }
