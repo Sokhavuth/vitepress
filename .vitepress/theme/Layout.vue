@@ -8,7 +8,7 @@ import Latest from './components/Latest.vue'
 import Paginate from './components/Paginate.vue'
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { frontmatter } = useData()
+const { params, frontmatter } = useData()
 const urlParams = new URLSearchParams(window.location.search)
 const page = urlParams.get('page')
 </script>
@@ -20,10 +20,17 @@ const page = urlParams.get('page')
     <Latest />
     <Home />
   </div>
+
   <div v-else-if="frontmatter.paginate">
+    <Menu pageURL="Paginate" />
+    <Paginate :page="params.page" />
+  </div>
+
+  <div v-else-if="frontmatter.archive">
     <Menu pageURL="Paginate" />
     <Paginate :page="page" />
   </div>
+
   <div v-else>
     <Menu pageURL="Other" />
     <a href="/">Home</a>

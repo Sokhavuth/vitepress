@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="navigation">
-        <a @click="changePage"><img src="/images/load-more.png" /></a>
+        <a href="/vitepress/paginate/2"><img src="/images/load-more.png" /></a>
     </div>
 </section>
 </template>

@@ -11,7 +11,7 @@
     const posts = Posts.slice(startIndex, endIndex)
 
     function changePage(e){
-        document.location = `/vitepress/paginate?page=${e.target.value}`
+        document.location = `/vitepress/archive?page=${e.target.value}`
     }
 </script>
 
